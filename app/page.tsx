@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <div className="h-screen">
-      <CopilotKit publicApiKey={COPILOT_CLOUD_PUBLIC_API_KEY}>
+      <CopilotKit runtimeUrl={"/api/copilotkit"}>
         <EmailsProvider>
           <EmailThread />
         </EmailsProvider>
